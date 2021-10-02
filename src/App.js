@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from "react"
+//import Checkboxes from "./components/Checkboxes"
+import Todolist from "./components/Todolist"
 
 function App() {
+  console.log(Todolist)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hi Universe</p>
+      {Todolist.map(todo => { <p key={todo.id}></p>
+        return <div>{todo.task}</div>
+      })}
     </div>
   );
 }
