@@ -11,17 +11,17 @@ function App() {
   //   key={todo.id} task={todo.task} requiresConcentration = {todo.requiresConcentration}
   // });
 
+  // {Todolist.map(todo => { key={todo.id}
+  //   return <label>{todo.task}</label>
+  //  <Checkboxes2/>
+  // }) }
+
   return (
     
     <div className="App">
-    <p>To Do's</p>
-      
-    {Todolist.map(todo => { key={todo.id}
-      return <label>{todo.task}</label>
-     <Checkboxes2/>
-    }) }
-      
-      
+    <h1>To Do's</h1>
+    <hr></hr>
+      <Checkboxes2/>
     </div>
   );
 }
