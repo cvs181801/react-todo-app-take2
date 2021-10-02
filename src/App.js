@@ -1,32 +1,23 @@
 
 import React from "react"
 import Checkboxes2 from "./components/Checkboxes2";
-//import Checkboxes2 from "./components/Checkboxes2"
 import Todolist from "./components/Todolist"
+import Affirmation from "./components/Affirmation"
 
 function App() {
-  console.log(Todolist)
+console.log(Todolist)
 
-  //  const newTodoListAffirmations = Todolist.map(todo => {
-  //     return <p key={todo.id} affirmation={todo.affirmation}/>
-  //     });
-
-  // console.log(newTodoListAffirmations)
-
-  // {Todolist.map(todo => { key={todo.id}
-  //   return <label>{todo.task}</label>
-  //  <Checkboxes2/>
-  // }) }
+// const newArrayAffirmations = Todolist.map((todo) => {
+//   return <p key={todo.keys} affirmation={todo.affirmation}></p>
+//   })
+// console.log(newArrayAffirmations);
 
   return (
     <div className="App">
     <h1>To Do's</h1>
     <hr></hr>
       <Checkboxes2/>
-      {Todolist.map((todo) => {
-      return <p {todo.keys} affirmation={todo.affirmation}></p>
-      })}
-      
+      <Affirmation/>
     </div>
   );
 }
