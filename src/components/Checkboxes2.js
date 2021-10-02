@@ -1,7 +1,7 @@
 //import Todolist from "./components/Todolist"
 import React from "react"
 
-function Checkboxes2(props) {
+function Checkboxes2() {
     return (
         <div className="ToDos-Div">
          

@@ -7,16 +7,19 @@ import Todolist from "./components/Todolist"
 function App() {
   console.log(Todolist)
 
-  const newTodoList= Todolist.map(todo => {
-    key={todo.id} task={todo.task} requiresConcentration = {todo.requiresConcentration}
-  });
+  // const newTodoList= Todolist.map(todo => {
+  //   key={todo.id} task={todo.task} requiresConcentration = {todo.requiresConcentration}
+  // });
 
   return (
-
+    
     <div className="App">
-      <p>To Do's</p>
+    <p>To Do's</p>
       
-        return <label>{todo.task}</label>
+    {Todolist.map(todo => { key={todo.id}
+      return <label>{todo.task}</label>
+     <Checkboxes2/>
+    }) }
       
       
     </div>
