@@ -8,6 +8,11 @@ h1 {
   text-align: center;
 }
 
+.App {
+  margin:0 auto;
+  text-align: center;
+}
+
 .ToDos-Div {
   margin: 0 auto;
   text-align: center;
