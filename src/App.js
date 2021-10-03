@@ -6,7 +6,7 @@ import Todolist from "./components/Todolist"
 function App() {
 console.log(Todolist)
 
-const affirmations = ["heck yes!", "Rock on", "don't give up"];
+const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
 
 // const newArrayAffirmations = Todolist.map((todo) => {
 //   return <p key={todo.keys} affirmation={todo.affirmation}></p>
@@ -18,9 +18,11 @@ const affirmations = ["heck yes!", "Rock on", "don't give up"];
     <h1>To Do's</h1>
     <hr></hr>
       <Checkboxes2/>
+      <div className="affirmations">
       {affirmations.map((affirmation) => (
-         <p>{affirmation}</p>
+         <p className="affirmations__p">{affirmation}</p>
       ))}
+      </div>
     </div>
   );
 }

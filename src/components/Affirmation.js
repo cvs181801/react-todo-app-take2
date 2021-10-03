@@ -1,10 +1,10 @@
 //import Todolist from "./components/Todolist"
 import React from "react"
 
-function Affirmation(Todolist) {
+function Affirmation() {
     return(
         <div>
-            <p>{Todolist.affirmation}</p>
+            <p>Hi</p>
         </div>
     )
 }

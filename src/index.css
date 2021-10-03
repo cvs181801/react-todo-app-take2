@@ -11,6 +11,8 @@ h1 {
 .App {
   margin:0 auto;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .ToDos-Div {
@@ -24,4 +26,21 @@ h1 {
 hr {
   max-width: 30vw;
   margin: 0 auto;
+}
+
+.affirmations {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(50deg, coral, cornflowerblue, aqua) no-repeat;
+  max-width: 50vw;
+
+}
+
+.affirmations__p {
+  padding: .3em;
+  font-size: 1.1rem;
+  
 }
