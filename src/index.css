@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  
+  font-family: sans-serif;
 }
 
 h1 {
@@ -42,5 +42,5 @@ hr {
 .affirmations__p {
   padding: .3em;
   font-size: 1.1rem;
-  
+  color: white;
 }

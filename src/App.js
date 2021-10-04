@@ -1,17 +1,14 @@
 import React from "react"
 import Checkboxes2 from "./components/Checkboxes2";
 import Todolist from "./components/Todolist"
-//import Affirmation from "./components/Affirmation"
+import Affirmation from "./components/Affirmation"
 
 function App() {
 console.log(Todolist)
 
-const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
+//const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
 
-// const newArrayAffirmations = Todolist.map((todo) => {
-//   return <p key={todo.keys} affirmation={todo.affirmation}></p>
-//   })
-// console.log(newArrayAffirmations);
+const affirmationStatements = Todolist.map(item => <Affirmation key={item.id} statement={item.affirmation} />)
 
   return (
     <div className="App">
@@ -19,9 +16,7 @@ const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "kee
     <hr></hr>
       <Checkboxes2/>
       <div className="affirmations">
-      {affirmations.map((affirmation) => (
-         <p className="affirmations__p">{affirmation}</p>
-      ))}
+      {affirmationStatements}
       </div>
     </div>
   );
