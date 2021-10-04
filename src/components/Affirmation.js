@@ -1,9 +1,12 @@
 import React from "react"
 
-function Affirmation(props) {
+
+function Affirmation() {
+
+    
     return(
         <div>
-            <p>{props.Todolist.affirmation}</p>
+            <p>hi</p>
         </div>
     )
 }
