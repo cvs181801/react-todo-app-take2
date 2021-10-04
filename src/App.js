@@ -1,7 +1,7 @@
 import React from "react"
 import Checkboxes2 from "./components/Checkboxes2";
 import Todolist from "./components/Todolist"
-//import Affirmation from "./components/Affirmation"
+import Affirmation from "./components/Affirmation"
 import Task from "./components/Task"
 
 function App() {
@@ -11,14 +11,17 @@ console.log(Todolist)
 
 //const affirmationStatements = Todolist.map(item => <Affirmation key={item.id} statement={item.affirmation} />)
 
+const affirmationArray = Todolist.map(statement => <Affirmation key={statement.id} affirmation={statement.affirmation}/>)
+console.log(affirmationArray);
+
   return (
     <div className="App">
     <h1>To Do's</h1>
     <hr></hr>
       <Checkboxes2/>
-      {/* <div className="affirmations">
-      {affirmationStatements}
-      </div> */}
+      <div className="affirmations">
+        {affirmationArray}
+      </div>
 
       <Task
         task="do laundry"
@@ -52,6 +55,9 @@ console.log(Todolist)
         howOften= 'monthly'
         affirmation= 'sweet.'
       />  
+
+
+
 
     </div>
   );

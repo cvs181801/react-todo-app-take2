@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function Task() {
+export default function Task(props) {
+    console.log(props)
     return (
+        
     <div>
-        <p>task: 'water the plants'</p>
-        <p>requiresConcentration: false</p>
-        <p> howOften: 'monthly'</p>
-        <p>affirmation: 'celebrate the small things'</p>
+        <p>task: {props.task}</p>
+        <p>requiresConcentration: {props.requiresConcentration}</p>
+        <p> howOften: {props.howOften}</p>
+        <p>affirmation: {props.affirmation}</p>
     </div>
     )
 }
