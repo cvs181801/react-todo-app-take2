@@ -3,6 +3,7 @@ import Checkboxes2 from "./components/Checkboxes2";
 import Todolist from "./components/Todolist"
 import Affirmation from "./components/Affirmation"
 import Task from "./components/Task"
+import Emoji from "./components/Emoji"
 
 function App() {
 console.log(Todolist)
@@ -14,6 +15,9 @@ console.log(Todolist)
 const affirmationArray = Todolist.map(statement => <Affirmation key={statement.id} affirmation={statement.affirmation}/>)
 console.log(affirmationArray);
 
+const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
+console.log(emojiArray[1]);
+
   return (
     <div className="App">
     <h1>To Do's</h1>
@@ -21,6 +25,7 @@ console.log(affirmationArray);
       <Checkboxes2/>
       <div className="affirmations">
         {affirmationArray}
+        {emojiArray}
       </div>
 
       <Task
@@ -28,19 +33,22 @@ console.log(affirmationArray);
         requiresConcentration= "false"
         howOften= 'weekly'
         affirmation= 'excellent'
+        
         />
 
       <Task
         task="check mail"
         requiresConcentration= "false"
         howOften= 'daily'
-        affirmation= 'rock on'/>
+        affirmation= 'rock on'
+        />
 
       <Task
         task="check snail mail"
         requiresConcentration= "false"
         howOften= 'daily'
-        affirmation= 'super'/>
+        affirmation= 'super'
+        />
 
       <Task
         task="build my website"

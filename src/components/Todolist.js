@@ -4,14 +4,16 @@ const Todolist = [
     task: 'wash dishes',
     requiresConcentration: false,
     howOften: 'daily',
-    affirmation: 'good work!'
+    affirmation: 'good work!',
+    emoji: '🐚'
 },
 {
     id: 2,
     task: 'study React',
     requiresConcentration: true,
     howOften: 'daily',
-    affirmation: "don't give up"
+    affirmation: "don't give up",
+    emoji: '🌞'
 },
 {
 
@@ -19,7 +21,8 @@ const Todolist = [
     task: 'practice yoga',
     requiresConcentration: true,
     howOften: 'weekly',
-    affirmation: 'I rock'
+    affirmation: 'I rock',
+    emoji: '💐'
 },
 {
 
@@ -27,21 +30,24 @@ const Todolist = [
     task: 'do laundry',
     requiresConcentration: false,
     howOften: 'weekly',
-    affirmation: 'excellent'
+    affirmation: 'excellent',
+    emoji: '🎋'
 },
 {
     id: 5,
     task: 'check mail',
     requiresConcentration: false,
     howOften: 'daily',
-    affirmation: 'way to adult'
+    affirmation: 'way to adult',
+    emoji: '🌴'
 },
 {
     id: 6,
     task: 'build my website',
     requiresConcentration: true,
     howOften: 'as needed',
-    affirmation: 'awesome'
+    affirmation: 'awesome',
+    emoji: "🦚"
 },
 {
 
@@ -49,7 +55,8 @@ const Todolist = [
     task: 'water the plants',
     requiresConcentration: false,
     howOften: 'monthly',
-    affirmation: 'celebrate the small things'
+    affirmation: 'celebrate the small things',
+    emoji: "🧖🏼‍♀️"
 },
 {
 
@@ -57,21 +64,24 @@ const Todolist = [
     task: 'pay mortgage',
     requiresConcentration: false,
     howOften: 'monthly',
-    affirmation: 'rock on!'
+    affirmation: 'rock on!',
+    emoji: '🍉'
 },
 {
     id: 9,
     task: 'check email',
     requiresConcentration: false,
     howOften: 'daily',
-    affirmation: 'mission accomplished'
+    affirmation: 'mission accomplished',
+    emoji: '📗'
 },
 {
     id: 10,
     task: 'do lower back exercises',
     requiresConcentration: false,
     howOften: 'daily',
-    affirmation: 'self care pays off'
+    affirmation: 'self care pays off',
+    emoji: '🏅'
 }
 
 ]
