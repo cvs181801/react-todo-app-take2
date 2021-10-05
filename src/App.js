@@ -4,6 +4,8 @@ import Todolist from "./components/Todolist"
 import Affirmation from "./components/Affirmation"
 import Task from "./components/Task"
 import Emoji from "./components/Emoji"
+import Todoitem from "./components/Todoitem"
+
 
 function App() {
 console.log(Todolist)
@@ -16,19 +18,26 @@ const affirmationArray = Todolist.map(statement => <Affirmation key={statement.i
 console.log(affirmationArray);
 
 const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
-console.log(emojiArray[1]);
+
+const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
+  howOften={item.howOften} affirmation={item.affirmation}/>) 
+
+  console.log(todoItems);
 
   return (
     <div className="App">
     <h1>To Do's</h1>
     <hr></hr>
       <Checkboxes2/>
+
       <div className="affirmations">
         {affirmationArray}
         {emojiArray}
       </div>
 
-      <Task
+      {todoItems}
+
+      {/* <Task
         task="do laundry"
         requiresConcentration= "false"
         howOften= 'weekly'
@@ -77,7 +86,7 @@ console.log(emojiArray[1]);
       />  
       <Emoji 
         emoji="🧟‍♀️"
-        />
+        />  */}
 
     </div>
   );
