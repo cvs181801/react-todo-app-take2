@@ -33,7 +33,9 @@ console.log(emojiArray[1]);
         requiresConcentration= "false"
         howOften= 'weekly'
         affirmation= 'excellent'
-        
+        />
+        <Emoji 
+        emoji="🥧"
         />
 
       <Task
@@ -42,12 +44,18 @@ console.log(emojiArray[1]);
         howOften= 'daily'
         affirmation= 'rock on'
         />
+        <Emoji 
+        emoji="🍷"
+        />
 
       <Task
         task="check snail mail"
         requiresConcentration= "false"
         howOften= 'daily'
         affirmation= 'super'
+        />
+        <Emoji 
+        emoji="🍪"
         />
 
       <Task
@@ -56,6 +64,10 @@ console.log(emojiArray[1]);
         howOften= 'as needed'
         affirmation= 'awesome'
         />
+        <Emoji 
+        emoji="🦸🏿‍♀️"
+        />
+
 
       <Task
         task="water the plants"
@@ -63,9 +75,9 @@ console.log(emojiArray[1]);
         howOften= 'monthly'
         affirmation= 'sweet.'
       />  
-
-
-
+      <Emoji 
+        emoji="🧟‍♀️"
+        />
 
     </div>
   );
