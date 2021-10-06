@@ -12,7 +12,8 @@ class Practice extends React.Component {
                     <p>🧜🏿‍♀️</p>
                     <p>!</p>
                     <p>You are currently logged in</p>
-                    <button onClick={()=>{console.log("logged in?", this.state.value)}}>Hi</button>
+                    <button onClick={()=> Object.assign(this.state.value,{value: false}) }>Hi</button>
+                    {console.log(this.state.value)}
                 </div>
             )
         }
