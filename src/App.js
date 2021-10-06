@@ -5,6 +5,7 @@ import Affirmation from "./components/Affirmation"
 import Task from "./components/Task"
 import Emoji from "./components/Emoji"
 import Todoitem from "./components/Todoitem"
+import Practice from "./components/Practice"
 
 
 function App() {
@@ -36,6 +37,8 @@ const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task
       </div>
 
       {todoItems}
+
+      <Practice/>
 
       {/* <Task
         task="do laundry"
