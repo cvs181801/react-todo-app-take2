@@ -1,6 +1,18 @@
 import React from 'react'
 
 class Practice extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            isLoggedIn: "true",
+            animalType: "frog",
+            isAFrog: "true",
+            isAnAmphibian: "true",
+            isAReptile: "false"
+
+        }
+
+    }
     
     //state = {value: true};
     //{console.log(this.state.value)};

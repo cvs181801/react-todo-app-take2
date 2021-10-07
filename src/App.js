@@ -40,7 +40,7 @@ const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task
 
       {todoItems}
 
-      <Greeting isLoggedIn={false}/>
+      <Greeting isLoggedIn={true}/>
 
       {/* <Task
         task="do laundry"
