@@ -2,7 +2,7 @@ import React from 'react'
 
 class Practice extends React.Component {
     
-    state = {value: true};
+    //state = {value: true};
     //{console.log(this.state.value)};
    
     //conditional rendering
@@ -13,6 +13,7 @@ class Practice extends React.Component {
           
         // renderP() {
         //     <p>You are currently logged out</p>
+        //<button onClick={()=> alert('hi')}>Hi</button>
 
         // }
             return (
@@ -20,7 +21,6 @@ class Practice extends React.Component {
                     <p>🧜🏿‍♀️</p>
                     <p>!</p>
                     <p>You are currently logged in</p>
-                    <button onClick={()=> alert('hi')}>Hi</button>
                 
                 </div>
             )
