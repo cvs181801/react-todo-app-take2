@@ -8,6 +8,7 @@ import Todoitem from "./components/Todoitem"
 import Practice from "./components/Practice"
 import Greeting from "./components/Greeting"
 import NotloggedIn from "./components/NotLoggedIn"
+import Button from "./components/Button"
 
 
 function App() {
@@ -32,66 +33,8 @@ const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task
     <h1>To Do's</h1>
     <hr></hr>
       <Checkboxes2/>
-
-      <div className="affirmations">
-        {affirmationArray}
-        {emojiArray}
-      </div>
-
-      {todoItems}
-
-      <Greeting isLoggedIn={true}/>
-
-      {/* <Task
-        task="do laundry"
-        requiresConcentration= "false"
-        howOften= 'weekly'
-        affirmation= 'excellent'
-        />
-        <Emoji 
-        emoji="🥧"
-        />
-
-      <Task
-        task="check mail"
-        requiresConcentration= "false"
-        howOften= 'daily'
-        affirmation= 'rock on'
-        />
-        <Emoji 
-        emoji="🍷"
-        />
-
-      <Task
-        task="check snail mail"
-        requiresConcentration= "false"
-        howOften= 'daily'
-        affirmation= 'super'
-        />
-        <Emoji 
-        emoji="🍪"
-        />
-
-      <Task
-        task="build my website"
-        requiresConcentration= "true"
-        howOften= 'as needed'
-        affirmation= 'awesome'
-        />
-        <Emoji 
-        emoji="🦸🏿‍♀️"
-        />
-
-
-      <Task
-        task="water the plants"
-        requiresConcentration= "false"
-        howOften= 'monthly'
-        affirmation= 'sweet.'
-      />  
-      <Emoji 
-        emoji="🧟‍♀️"
-        />  */}
+      <Button/> 
+   
 
     </div>
   );
