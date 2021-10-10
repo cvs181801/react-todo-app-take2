@@ -20,23 +20,9 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-handleChange(id) {
-  
+handleChange(id) {  
   console.log("changed!", id)
-  
 }  
-//console.log(Todolist)
-
-//const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
-
-//const affirmationStatements = Todolist.map(item => <Affirmation key={item.id} statement={item.affirmation} />)
-
-// const affirmationArray = Todolist.map(statement => <Affirmation key={statement.id} affirmation={statement.affirmation}/>)
-// console.log(affirmationArray);
-
-// const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
-
- 
 
 
 render() {
@@ -47,7 +33,7 @@ render() {
       <hr></hr>
         <Checkboxes2/>
     
-          {Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
+          {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
           howOften={item.howOften} affirmation={item.affirmation} handleChange={this.handleChange}/>)}
   
       </div>
