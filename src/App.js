@@ -12,21 +12,21 @@ import Button from "./components/Button"
 
 
 function App() {
-console.log(Todolist)
+//console.log(Todolist)
 
 //const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
 
 //const affirmationStatements = Todolist.map(item => <Affirmation key={item.id} statement={item.affirmation} />)
 
-const affirmationArray = Todolist.map(statement => <Affirmation key={statement.id} affirmation={statement.affirmation}/>)
-console.log(affirmationArray);
+// const affirmationArray = Todolist.map(statement => <Affirmation key={statement.id} affirmation={statement.affirmation}/>)
+// console.log(affirmationArray);
 
-const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
+// const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
 
-const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
-  howOften={item.howOften} affirmation={item.affirmation}/>) 
+// const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
+//   howOften={item.howOften} affirmation={item.affirmation}/>) 
 
-  console.log(todoItems);
+//   console.log(todoItems);
 
   return (
     <div className="App">
