@@ -67,8 +67,10 @@ render() {
         {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
         howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
         */}
-
-        <Conditional isLoading={this.state.isLoading}/>
+      {this.state.isLoading ? 
+      <h2>Loading...</h2> :
+      <Conditional />}
+        
       </div>
     );
   }
