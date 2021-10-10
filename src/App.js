@@ -20,12 +20,10 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-
-
-handleChange(event) {
-  event.preventDefault();
-  //console.log("changed!", id)
-  console.log(this.state)
+handleChange(id) {
+  
+  console.log("changed!", id)
+  
 }  
 //console.log(Todolist)
 
@@ -48,8 +46,9 @@ render() {
       <h1>To Do's</h1>
       <hr></hr>
         <Checkboxes2/>
+    
           {Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
-          howOften={item.howOften} affirmation={item.affirmation}/>)}
+          howOften={item.howOften} affirmation={item.affirmation} handleChange={this.handleChange}/>)}
   
       </div>
     );
