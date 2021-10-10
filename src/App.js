@@ -11,7 +11,22 @@ import NotloggedIn from "./components/NotLoggedIn"
 import Button from "./components/Button"
 
 
-function App() {
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      todos: Todolist 
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+
+
+handleChange(event) {
+  event.preventDefault();
+  //console.log("changed!", id)
+  console.log(this.state)
+}  
 //console.log(Todolist)
 
 //const affirmations = ["heck yes!", "Rock on", "don't give up", "way to go", "keep it up"];
@@ -23,21 +38,22 @@ function App() {
 
 // const emojiArray = Todolist.map(emoji => <Emoji key={emoji.id} emoji={emoji.emoji}/>)
 
-// const todoItems =  Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
-//   howOften={item.howOften} affirmation={item.affirmation}/>) 
+ 
 
-//   console.log(todoItems);
 
-  return (
-    <div className="App">
-    <h1>To Do's</h1>
-    <hr></hr>
-      <Checkboxes2/>
-      <Button/> 
-   
+render() {
 
-    </div>
-  );
+    return (
+      <div className="App">
+      <h1>To Do's</h1>
+      <hr></hr>
+        <Checkboxes2/>
+          {Todolist.map(item => < Todoitem key={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
+          howOften={item.howOften} affirmation={item.affirmation}/>)}
+  
+      </div>
+    );
+  }
 }
 
 export default App;
