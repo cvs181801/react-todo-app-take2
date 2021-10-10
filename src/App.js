@@ -15,29 +15,45 @@ import Conditional from "./components/Conditional"
 class App extends React.Component {
   constructor() {
     super()
-    this.state = {
-      todos: Todolist 
+      this.state = {
+        isLoading: true
+      }
     }
-    this.handleChange = this.handleChange.bind(this)
-  }
+  
 
-handleChange(id) {  
-  this.setState(prevState => {
-    const newTodos = prevState.todos.map(todo => {
-      if (todo.id === id) {
-        return {
-          ...todo,
-          completed: !todo.completed
-        }
-      } 
-      return todo
+
+
+    //to do list ***
+//     this.state = {
+//       todos: Todolist 
+//     }
+//     this.handleChange = this.handleChange.bind(this)
+//   }
+
+// handleChange(id) {  
+//   this.setState(prevState => {
+//     const newTodos = prevState.todos.map(todo => {
+//       if (todo.id === id) {
+//         return {
+//           ...todo,
+//           completed: !todo.completed
+//         }
+//       } 
+//       return todo
+//     })
+//     return {
+//       todos: newTodos
+//     }
+//   })
+// }  
+
+componentDidMount() {
+  setTimeout(() => {
+    this.setState({
+      isLoading: false
     })
-    return {
-      todos: newTodos
-    }
-  })
-}  
-
+  }, 4500)
+}
 
 
 
@@ -47,10 +63,12 @@ render() {
       <div className="App">
       <h1>To Do's</h1>
       <hr></hr>
-        
+{/*         
         {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
         howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
-        <Conditional completed={this.state.completed}/>
+        */}
+
+        <Conditional isLoading={this.state.isLoading}/>
       </div>
     );
   }

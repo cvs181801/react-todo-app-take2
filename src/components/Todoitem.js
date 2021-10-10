@@ -9,10 +9,12 @@ function Todoitem(props) {
             <p>{props.requiresConcentration}</p>
             <p>{props.howOften}</p>
             <p>{props.affirmation}</p>
-            <p>{props.completed}</p>
+            
             <input 
             type="checkbox" 
             onChange={()=> props.handleChange(props.id)}></input>
+
+            {props.completed === true ? <h2>Not yet completed</h2> : <h2>Complete!</h2>}
         </div>
     )
 }
