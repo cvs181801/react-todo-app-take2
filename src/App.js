@@ -9,6 +9,7 @@ import Practice from "./components/Practice"
 import Greeting from "./components/Greeting"
 import NotloggedIn from "./components/NotLoggedIn"
 import Button from "./components/Button"
+import Conditional from "./components/Conditional"
 
 
 class App extends React.Component {
@@ -38,17 +39,18 @@ handleChange(id) {
 }  
 
 
+
+
 render() {
 
     return (
       <div className="App">
       <h1>To Do's</h1>
       <hr></hr>
-        <Checkboxes2/>
-    
-          {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
-          howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
-  
+        
+        {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
+        howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
+        <Conditional completed={this.state.completed}/>
       </div>
     );
   }
