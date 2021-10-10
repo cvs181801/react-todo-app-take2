@@ -5,7 +5,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'daily',
     affirmation: 'good work!',
-    emoji: '🐚'
+    emoji: '🐚',
+    completed: false
 },
 {
     id: 2,
@@ -13,7 +14,8 @@ const Todolist = [
     requiresConcentration: true,
     howOften: 'daily',
     affirmation: "don't give up",
-    emoji: '🌞'
+    emoji: '🌞',
+    completed: false
 },
 {
 
@@ -22,7 +24,8 @@ const Todolist = [
     requiresConcentration: true,
     howOften: 'weekly',
     affirmation: 'I rock',
-    emoji: '💐'
+    emoji: '💐',
+    completed: false
 },
 {
 
@@ -31,7 +34,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'weekly',
     affirmation: 'excellent',
-    emoji: '🎋'
+    emoji: '🎋',
+    completed: false
 },
 {
     id: 5,
@@ -39,7 +43,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'daily',
     affirmation: 'way to adult',
-    emoji: '🌴'
+    emoji: '🌴',
+    completed: false
 },
 {
     id: 6,
@@ -47,7 +52,8 @@ const Todolist = [
     requiresConcentration: true,
     howOften: 'as needed',
     affirmation: 'awesome',
-    emoji: "🦚"
+    emoji: "🦚",
+    completed: false
 },
 {
 
@@ -56,7 +62,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'monthly',
     affirmation: 'celebrate the small things',
-    emoji: "🧖🏼‍♀️"
+    emoji: "🧖🏼‍♀️",
+    completed: false
 },
 {
 
@@ -65,7 +72,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'monthly',
     affirmation: 'rock on!',
-    emoji: '🍉'
+    emoji: '🍉',
+    completed: false
 },
 {
     id: 9,
@@ -73,7 +81,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'daily',
     affirmation: 'mission accomplished',
-    emoji: '📗'
+    emoji: '📗',
+    completed: false
 },
 {
     id: 10,
@@ -81,7 +90,8 @@ const Todolist = [
     requiresConcentration: false,
     howOften: 'daily',
     affirmation: 'self care pays off',
-    emoji: '🏅'
+    emoji: '🏅',
+    completed: false
 }
 
 ]

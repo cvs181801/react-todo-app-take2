@@ -21,7 +21,18 @@ class App extends React.Component {
   }
 
 handleChange(id) {  
-  console.log("changed!", id)
+  this.setState(prevState => {
+    const newTodos = prevState.todos.map(todo => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed;
+        console.log(id, todo.completed)
+      }
+      return todo
+    })
+    return {
+      todos: newTodos
+    }
+  })
 }  
 
 
@@ -34,7 +45,7 @@ render() {
         <Checkboxes2/>
     
           {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
-          howOften={item.howOften} affirmation={item.affirmation} handleChange={this.handleChange}/>)}
+          howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
   
       </div>
     );
