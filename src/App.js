@@ -24,9 +24,11 @@ handleChange(id) {
   this.setState(prevState => {
     const newTodos = prevState.todos.map(todo => {
       if (todo.id === id) {
-        todo.completed = !todo.completed;
-        console.log(id, todo.completed)
-      }
+        return {
+          ...todo,
+          completed: !todo.completed
+        }
+      } 
       return todo
     })
     return {
