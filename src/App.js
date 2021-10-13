@@ -7,7 +7,7 @@ import Emoji from "./components/Emoji"
 import Todoitem from "./components/Todoitem"
 import Practice from "./components/Practice"
 import Greeting from "./components/Greeting"
-import NotloggedIn from "./components/NotLoggedIn"
+import LoggedIn from "./components/LoggedIn"
 import Button from "./components/Button"
 import Conditional from "./components/Conditional"
 
@@ -16,11 +16,12 @@ class App extends React.Component {
   constructor() {
     super()
       this.state = {
-        isLoading: true
+        isLoggedIn: false
       }
+      this.handleClick = this.handleClick.bind(this)
     }
   
-
+  
 
 
     //to do list ***
@@ -47,33 +48,30 @@ class App extends React.Component {
 //   })
 // }  
 
-componentDidMount() {
-  setTimeout(() => {
-    this.setState({
-      isLoading: false
-    })
-  }, 4500)
-}
-
-
-
-render() {
-
-    return (
-      <div className="App">
-      <h1>To Do's</h1>
-      <hr></hr>
-{/*         
+/*         
         {Todolist.map(item => < Todoitem key={item.id} id={item.id} task={item.task} requiresConcentration={item.requiresConcentration} 
         howOften={item.howOften} affirmation={item.affirmation} completed={item.completed} handleChange={this.handleChange}/>)}
-        */}
-      {this.state.isLoading ? 
-      <h2>Loading...</h2> :
-      <Conditional />}
-        
-      </div>
-    );
-  }
+        */
+
+
+handleClick() {
+  this.setState({isLoggedIn: true})
+  console.log( this.state.isLoggedIn);
 }
 
+
+  render() {
+
+      return (
+        <div className="App">
+        <h1>To Do's</h1>
+        <hr></hr>
+
+        <button onClick={this.handleClick}>Log In</button>
+        <p>{this.state.isLoggedIn}</p>
+        </div>
+      )
+  }
+
+}
 export default App;

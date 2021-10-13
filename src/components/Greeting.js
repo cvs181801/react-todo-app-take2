@@ -1,6 +1,6 @@
 import React from 'react'
 import Practice from "./Practice"
-import NotLoggedIn from "./NotLoggedIn"
+import LoggedIn from "./LoggedIn"
 
 export default function Greeting(props) {
     console.log(props);
@@ -11,6 +11,6 @@ export default function Greeting(props) {
         )
     } 
     return (
-        <NotLoggedIn/>
+        <LoggedIn/>
     )
 }
