@@ -55,18 +55,9 @@ class App extends React.Component {
 
 
 handleClick() {
-  this.setState(prevState => {
-    if (prevState === true) {
-      return (
-        {isLoggedIn: false}
-      )
-    } else {
-      return (
-        {isLoggedIn: true}
-      )
-    }
-    })
-  //console.log( this.state.isLoggedIn);
+  this.setState(prevState => ({
+      isLoggedIn: !prevState.isLoggedIn
+    }));
 }
 
 
