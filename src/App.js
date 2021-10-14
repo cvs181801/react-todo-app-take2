@@ -55,8 +55,18 @@ class App extends React.Component {
 
 
 handleClick() {
-  this.setState({isLoggedIn: true})
-  console.log( this.state.isLoggedIn);
+  this.setState(prevState => {
+    if (prevState === true) {
+      return (
+        {isLoggedIn: false}
+      )
+    } else {
+      return (
+        {isLoggedIn: true}
+      )
+    }
+    })
+  //console.log( this.state.isLoggedIn);
 }
 
 
@@ -68,7 +78,7 @@ handleClick() {
         <hr></hr>
 
         <button onClick={this.handleClick}>Log In</button>
-        <p>{this.state.isLoggedIn}</p>
+        <LoggedIn isLoggedIn={this.state.isLoggedIn}/>
         </div>
       )
   }
