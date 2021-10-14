@@ -62,13 +62,13 @@ handleClick() {
 
 
   render() {
-
+    let buttonText = this.state.isLoggedIn ? "Log Out" : "Log In";
       return (
         <div className="App">
         <h1>To Do's</h1>
         <hr></hr>
 
-        <button onClick={this.handleClick}>Log In</button>
+        <button onClick={this.handleClick}>{buttonText}</button>
         <LoggedIn isLoggedIn={this.state.isLoggedIn}/>
         </div>
       )
